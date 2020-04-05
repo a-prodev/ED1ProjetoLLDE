@@ -51,11 +51,16 @@ void MainWindow::on_pushButtonRetirarInicio_clicked()
         saida = "Quantidade de elementos: " + QString::number(lista.getQuantidade()) +
                 "\nValor do elemento removido: " + QString::number(valor) +
                 "\nValores dos elementos inseridos: ";
-        if (lista.getQuantidade() != 0){
+        if (lista.getQuantidade() > 0){
         for(i = 1; i < lista.getQuantidade(); i++)
             saida += QString::number(lista[i]) + ", ";
         saida += QString::number(lista[i]) + ".";
         ui->textEditResultado->setText(saida);
+        } else {
+            saida = "Quantidade de elementos: " + QString::number(lista.getQuantidade()) +
+                    "\nValor do elemento removido: " + QString::number(valor) +
+                    "\nValores dos elementos inseridos: ";
+            ui->textEditResultado->setText(saida);
         }
     } catch (QString erro) {
         QMessageBox::information(this,"ERRO NO PROGRAMA",erro);
