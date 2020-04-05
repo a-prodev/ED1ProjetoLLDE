@@ -58,8 +58,8 @@ void MainWindow::on_pushButtonRetirarInicio_clicked()
         ui->textEditResultado->setText(saida);
         } else {
             saida = "Quantidade de elementos: " + QString::number(lista.getQuantidade()) +
-                    "\nValor do elemento removido: " + QString::number(valor) +
-                    "\nValores dos elementos inseridos: ";
+                    "\nValor do último elemento removido: " + QString::number(valor) +
+                    "\nValores dos elementos inseridos: (lista vazia)";
             ui->textEditResultado->setText(saida);
         }
     } catch (QString erro) {
