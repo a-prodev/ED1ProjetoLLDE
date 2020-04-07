@@ -66,7 +66,7 @@ void LLDE::inserirFim(int elemento)
 
 }
 
-int LLDE::retiarFim()
+int LLDE::retirarFim()
 {
     if (estaVazia())
         throw QString("Erro: Elemento não retirado por a lista estar vazia.");
@@ -109,7 +109,7 @@ LLDE::LLDE():
 LLDE::~LLDE()
 {
     while (!estaVazia()) {
-        this->retiarFim();
+        this->retirarFim();
     }
 }
 

@@ -18,7 +18,7 @@ public:
     void inserirInicio(int valor);
     int retirarInicio();
     void inserirFim(int elemento);
-    int retiarFim();
+    int retirarFim();
     int operator[](int pos);
 };
 

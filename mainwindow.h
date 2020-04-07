@@ -23,6 +23,12 @@ private slots:
 
     void on_pushButtonRetirarInicio_clicked();
 
+    void on_pushButtonInserirFim_clicked();
+
+    void on_pushButtonRetirarFim_clicked();
+
+    void on_pushButtonAcessarValor_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
